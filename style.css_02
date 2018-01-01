@@ -1,4 +1,5 @@
 /* Base Styles -------------------- */
+
 * {
   box-sizing: border-box;
 }
@@ -58,11 +59,19 @@ a:active {
 /* Main Styles --------------------- */
 
 .main-header {
-  background-color: #ffa949;
+/*
+  background-color:#ffa949;
   padding-top: 170px;
   height: 850px;
+  background-image: url('../img/mountains.jpg');
+  background-size: cover;   % is the relative to the width and height of the background area of the element, not to the actual image
+  background-repeat: no-repeat;
+  background-position: center;
+  
+*/
+  background: #ffa949 url('../img/mountains.jpg') no-repeat center / cover;
 }
-
+ 
 .title {
   color: white;
   font-size: 1.625rem; /* 26px/16px */
@@ -114,9 +123,9 @@ a:active {
 .secondary-content {
   width: 75%;
   padding-left: 50px;
-  padding-right: 50px; 
+  padding-right: 50px;
   margin: auto;
-  max-width: 900px;
+  max-width: 960px;
 }
 
 .wildlife {
@@ -130,3 +139,10 @@ a:active {
 .arrow {
   width: 50px;
 }
+
+
+
+
+
+
+
